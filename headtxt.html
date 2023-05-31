@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+	<title>javascript</title>
+<style type="text/css">
+	body {
+		padding: 25px;
+		background-color: white;
+		color: black;
+		font-size: 25px;
+	}
+    .dark-mode {
+    	background-color: black;
+    	color: white;
+    }
+
+    #headtxt {
+    	padding: 0;
+    	list-style: none;
+    	height: 15em;
+    	float: left;
+    	height: 100px;
+    	margin: 0 5px;
+    	background: #ccc;
+    	text-align: center;
+    	opacity: 0;
+    	animation: fadeIn 1s ease-in both
+    }
+    @keyframes fadeIn {
+    	from {
+    		opacity: 0;
+    		transform: : translate3d(0, -20%, 0);
+    	}
+    	to {
+    		opacity: 1;
+    		transform: translate(0,0,0); 
+    	}
+    }
+</style>
+</head>
+<body>
+<div id="btn">
+<div id="animae">
+<h1>My Javascript</h1>
+</div>
+<button onclick="myFunctoin()">click</button>
+<script type="text/javascript">
+	function myFunction() {
+var element = document.body;
+element.classList.toggle("dark-mode")
+}
+</script>
+
+<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+</body>
+</html>

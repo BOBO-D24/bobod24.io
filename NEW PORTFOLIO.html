@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" http-equiv="5">
+<meta name="viewport" content="width=device-width,
+ initial-scale=1">
+ <meta property="og:type" content="video">
+<meta property="og:title" content="vtrend">
+<meta property="og:url" content="">
+<meta property="og:image" content="file:///C:/Users/HP/Desktop/image/xelent%20mock%20up.jpg">
+<meta property="video:release_date" content="2023-04-24">
+<meta property="video:tag" content="">
+<meta property="video:actor" content="">
+<meta property="video:director" content="">
+<meta property="video:writer" content="">
+ <link rel="stylesheet" type="text/css" href="loder.html" id="loader">
+ <link rel="stylesheet" type="text/css" href="headtxt.html">
+ <link rel="stylesheet" type="text/css" href="C:\Users\HP\Desktop\11\headtxt.html">
+	<title>NEW PORTFOLIO</title>
+
+</head>
+<style type="text/css">
+	@media screen and (max-width: 600px)
+/*head style(heading,)*/
+
+.headtxt {
+	text-align: center;
+	color: white;
+} 
+html {
+	display: flex;
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+}
+
+ #headtxt {
+    	list-style: none;
+    	height: 15em;
+    	text-align: center;
+    	opacity: 0;
+    	animation: fadeIn 1s ease-in both;
+    }
+    @keyframes fadeIn {
+    	from {
+    		opacity: 0;
+    		transform:translate3d(0, -20%, 0);
+    	}
+    	to {
+    		opacity: 1;
+    		transform: translate(0,0,0); 
+    	}
+    }
+
+
+/*drop down content*/
+.dropbtn{
+	background-color: yellow;
+	color: grey;
+	padding: 16px;
+	font-size: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: red;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px green;
+	padding: 12px 16px;
+	color: white;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+
+}
+
+.dropdown-content a: hover {
+	background-color: blue;
+}
+
+.dropdown:hover .dropdown-cotent {
+	display: block;
+}
+
+.w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.w3-bar-block .w3-dropdown-hover,.w3-bar-block .w3-dropdown-click{width:100%}
+.w3-bar-block .w3-dropdown-hover .w3-dropdown-content,.w3-bar-block .w3-dropdown-click .w3-dropdown-content{min-width:100%}
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+button {
+}
+
+.w3-col,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{float:left;width:100%}
+
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+
+
+.w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+
+.w3-section {
+	margin-top:16px!important;margin-bottom:16px!important
+}
+
+.w3-xlarge {
+	font-size:24px!important
+	}
+.w3-center {
+	text-align: center!important;
+}
+
+/*head*/
+.header {
+	background-color: #3633336b;
+	padding: 30px;
+	text-align: center;
+}
+
+.topcontent{
+	max-width: 100%;
+	margin-left: 100px;
+	background-image: url(IMG-20230101-WA0002.jpg);
+	animation: myAnim 5s ease 0s 1 normal forwards;
+}
+	@keyframes myAnim {
+	0% {
+		background-position: center top;
+		background-size: 100%;
+	}
+
+	100% {
+		background-position: center top;
+		background-size: 150%;
+	}
+}
+
+/*main content (bio, portfolio, footer)*/
+body {
+	background-color: #19171c;
+	transition: 0.7s 0.7s;
+	color: white;
+	font-size: 20px;
+}
+
+
+.content {
+	size: auto;
+	position: relative;
+	max-width: 100%;
+	margin-left: 100px;
+	float: right;
+	width: -webkit-fill-available;
+	transition:margin-left .4s
+
+}
+
+.portfolio-pics {
+	display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+}
+
+.column {
+	padding: 10px;
+	height: auto;
+	color: white; 
+}
+
+.column.side {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	color: white;
+}
+.column.middle {
+	-webkit-flex: 2;
+	-ms-flex: 2;
+	flex: 2
+}
+
+}
+/*gallery*/
+.portfolio-pics {
+	max-width: 600px;
+	display: grid;
+	grid-gap: 5px;
+}
+
+.pic {
+	border: 5px solid white;
+	border-radius: 20px;
+	max-width: 300px;
+	filter: grayscale(1);
+	border-color: #9d9191;
+}
+
+.pic:hover {
+	filter: grayscale(0);
+	transition: 0.7s 0.3s;}
+	animation: myAnim 1s ease 0s 1 normal forwards;}
+	@keyframes myAnim {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		transform: scale(1);
+	}
+
+	100% {
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		transform: scale(1.1);
+	}
+}
+.pic:onclick {
+	animation: myAnim 1s ease 0s infinite normal forwards;}
+	@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+ 
+/*sidenav style*/
+.sidenav {
+	float: left;
+	height: 100%;
+	width: 100px;
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	background-color: #828287;
+	overflow-x: hidden; 
+}
+
+.sidenav a {
+	border-radius: 10px;
+	color: ghostwhite;
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+	transition: 0.7s 0.2s cubic-bezier(0.6, 0.01, 0.42, 1.19);
+}
+
+.sidenav a:hover {
+	background-color: white;
+	color: black;
+}
+
+/*project section*/
+.p1 {
+	border: 2px solid white;
+	border-radius: 10px;
+	width: 150px;
+	color: goldenrod;
+	background: linear-gradient(black, white);
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 5px 6px 24px 6px #000;
+}
+a .p1 {
+	width: 30%;
+}
+
+.p1:hover {
+	background: linear-gradient(black, white) 40deg;
+	transition: 0.5s 0.5s;
+	height: 50px;
+	width: 200px;
+	box-shadow: 15px 15px 24px 6px #000;
+}
+
+/*footer style*/
+.footer {
+	border: 2px solid;
+	max-height: 50;
+	background-color: #f1f1f1;
+	padding: 10px;
+	text-align: center;
+	width: 
+}
+
+.footer p {
+	color: black;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.service-box {
+  text-align: center;
+}
+
+.service-box i {
+  font-size: 36px;
+  color: navy;
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.txt {
+  color: black;
+}
+
+button {
+	height: 20px;
+	width: 100px;
+	color: white;
+	background-color: black;
+}
+
+button:hover {
+	background-color: grey;
+	color: black;
+	border-radius: 10px;
+}
+
+.lightMode{
+	background-color: white;
+	color: black;
+}
+/*media query*/
+@media (max-width: 600px) {
+	.row {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+@media (min-width:601px){.w3-col.m1{width:8.33333%}.w3-col.m2{width:16.66666%}.w3-col.m3,.w3-quarter{width:24.99999%}.w3-col.m4,.w3-third{width:33.33333%}
+
+}
+</style>
+<body>
+	
+	<div class="sidenav" id="sidenav">
+		<a href="#">Home</a>
+	    <a href="#about">About</a>
+		<a href="#contact">Contact</a>
+		<a href="#projects">Projects</a>
+	</div>
+<div class="topcontent">
+<header>
+
+<div class="header" id="headtxt">
+	<h1 style="font-size: 10vw" class="headtxt" style="background: url(IMG-20230101-WA0002.jpg);">
+		BOBO-D
+	</h1>
+	<h2>
+		Web Developer.
+	</h2>
+</div>
+
+</div>
+	</div>	
+</div>
+</header>
+</div>
+<div class="content">
+ <div class="column side" id="home">
+ 	 <div class="" id="about">
+    <h2>About</h2>
+    <hr class="text2">
+    <p>My names are Adeola Majiyagbe Emmanuel
+    	<br>
+     (AKA.BOBO-D) and i'm 16 years old.
+    	<br>
+     I live in Nigeria. And I work as a web developer.
+     <br>
+    If you are looking for a frontend website developer 
+    <br>
+    then you are in the right place.  
+    </p>
+    </div>
+	  <h3 class="text4">My Skills</h3>
+    <p class="text3">DIY .Engineer</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+    </div>
+    <p class="text3">Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="text3">Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-dark-grey text4 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">0</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">25+</span><br>
+        Meetings
+      </div>
+    </div>
+      
+ </div>
+ <div>
+ <div class="column middle" id="about">
+ 	<h2>My Gallery</h2>
+ 	 <div class="portfolio-pics">
+ 	 	<img src="IMG-20230101-WA0003.jpg" class="pic1 pic" >
+        <img src="IMG-20230101-WA0005.jpg" class="pic2 pic">
+        <img src="IMG-20230101-WA0002.jpg" class="pic3 pic">
+        <img src="FB_IMG_16743069033581621.jpg" class="pic5 pic">
+        <img src="FB_IMG_16608910952358449.jpg" class="pic6 pic">
+       
+      </div>
+ </div>
+</div>
+
+<!--projects section-->
+<div class="projects" id="projects">
+	<h2>Projects</h2>
+	<a href="my chatgbt.html">
+		<h3 class="p1">Sticker Wrld</h3></a>
+	<a href="v.trend.homepage.html">
+		<h3 class="p1">V.Trend</h3></a>
+	<a href="file:///C:/Users/HP/Desktop/11/mygame.html">
+		<h3 class="p1">TIC TAC TOE</h3></a>
+</div>
+
+ <!--contact section -->
+
+ <div class="column side" id="contact">
+<div class="mycontact" id="contact">
+	<h2>Contact Me</h2>
+	<p><i>Lagos,Nigeria</i></p>
+	<p><i>Phone:+234 9049278537</i></p>
+	<p><i> Email: bobodproject@gmail.com</i></p>
+ </div>
+  <p>Lets get in touch. Send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input text4 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input text4 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input text4 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input text4 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+</div>
+
+<!--footer section -->
+ <div class="footer">
+	 <div class="services-grid">
+          <div class="service-box">
+            <i class="fas fa-mobile-alt"></i>
+            <h3 class="txt">Responsive web Design</h3>
+            <p>we can help with responsive web design using (HTML,CSS,JAVASCRIPT)</p>
+          </div>
+          <div class="service-box">
+            <i class="fas fa-magic"></i>
+            <h3 class="txt">Graphic Design</h3>
+            <p>Graphics design with(ADOBE, CORELDRAW, Lr)</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+// Open and close sidebar
+function openNav() {
+  document.getElementById("sidenav").style.width = "60%";
+  document.getElementById("sidenav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.display = "none";
+}
+</script>
+</html>
